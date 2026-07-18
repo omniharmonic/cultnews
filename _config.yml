@@ -11,8 +11,8 @@ description: >-
 # Deployed as a GitHub Pages *project* site first (subpath), then a custom
 # domain. When cultnews.news goes live, set url to https://cultnews.news and
 # baseurl to "" (empty), and add the CNAME file.
-url: "https://omniharmonic.github.io"
-baseurl: "/cultnews"
+url: "https://cultnews.news"
+baseurl: ""
 
 # Production tips address (form relay + mailto fallback). §12.3.
 production_email: "synergy@benjaminlife.one"
