@@ -7,6 +7,9 @@ tags: [eastern, feature]
 byline: "Tomas Reyes"
 dateline: "—"
 date: 2026-07-01
+image: /assets/img/cultnews_images/the-age-must-turn.jpg
+image_alt: "The Sons of the Iron Age, who hold that the cosmic cycle is at its nadir."
+cutline: "'The age must turn': the Vanguard's public rites. — Cult News"
 related: [chasing-the-rainbow-body-on-a-deadline]
 ---
 

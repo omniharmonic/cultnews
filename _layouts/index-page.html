@@ -12,6 +12,13 @@ layout: default
     <p class="pagehead__deck">A standing count of the world&rsquo;s active apocalyptic movements — the argument, rendered as an instrument.</p>
   </header>
 
+  {%- if page.accent_image -%}
+  <figure class="page-hero">
+    <img src="{{ page.accent_image | relative_url }}" alt="{{ page.accent_image_alt | escape }}" loading="eager" width="1400" height="933">
+    {%- if page.accent_cutline -%}<figcaption class="article__cutline">{{ page.accent_cutline }}</figcaption>{%- endif -%}
+  </figure>
+  {%- endif -%}
+
   <div class="index-hero">
     <div class="prose">
       {%- comment -%} This page is authored as an .html file with a markdown body, so convert it. {%- endcomment -%}

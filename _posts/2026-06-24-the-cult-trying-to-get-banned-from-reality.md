@@ -7,6 +7,9 @@ tags: [ai, simulation, feature]
 byline: "Dev Okafor"
 dateline: "AUSTIN, Texas"
 date: 2026-06-24
+image: /assets/img/cultnews_images/the-cult-trying-to-get-banned-from-reality.jpg
+image_alt: "The Basement, who believe reality is a simulation nearing shutdown."
+cutline: "Raising the render: the Basement, Austin. — Cult News"
 related: [inside-the-sonoma-compound-praying-for-the-singularity]
 ---
 

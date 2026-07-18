@@ -7,6 +7,9 @@ tags: [unification, devotion, feature]
 byline: "Sister Perpetua Lund"
 dateline: "—"
 date: 2026-06-18
+image: /assets/img/cultnews_images/a-thousand-weddings-for-the-dawn.jpg
+image_alt: "The Blessed Remnant, whose central rite is a mass blessing of couples."
+cutline: "A mass blessing for the world to come: the Blessed Remnant. — Cult News"
 related: [the-frequency-was-too-high]
 ---
 

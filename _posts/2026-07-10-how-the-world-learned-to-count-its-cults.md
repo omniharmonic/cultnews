@@ -7,6 +7,9 @@ tags: [investigation, data, boom]
 byline: "the Data Desk"
 dateline: "—"
 date: 2026-07-10
+image: /assets/img/cultnews_images/how-the-world-learned-to-count-its-cults.jpg
+image_alt: "The exponential rise in new apocalyptic movements, charted by the Data Desk."
+cutline: "The curve the Data Desk keeps. — Cult News"
 related: [inside-the-sonoma-compound-praying-for-the-singularity, a-thousand-weddings-for-the-dawn]
 ---
 

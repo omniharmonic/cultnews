@@ -7,6 +7,9 @@ tags: [newage, defector, feature]
 byline: "Sister Perpetua Lund"
 dateline: "—"
 date: 2026-04-22
+image: /assets/img/cultnews_images/the-frequency-was-too-high.jpg
+image_alt: "A defector's account of Aurora Home and its teaching of ascension by 'frequency'."
+cutline: "Raise your vibration until the room empties. — Cult News"
 related: [eleven-landing-dates-later-the-ninth-wave-still-waits]
 ---
 

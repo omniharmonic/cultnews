@@ -7,6 +7,9 @@ tags: [eastern, feature]
 byline: "Tomas Reyes"
 dateline: "—"
 date: 2026-06-05
+image: /assets/img/cultnews_images/chasing-the-rainbow-body-on-a-deadline.jpg
+image_alt: "The Clear Light Sangha, chasing a contemplative attainment against a self-imposed clock."
+cutline: "A patient tradition, acquired impatiently. — Cult News"
 related: [the-age-must-turn]
 ---
 

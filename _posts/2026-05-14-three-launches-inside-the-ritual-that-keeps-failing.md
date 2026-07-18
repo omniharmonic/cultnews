@@ -7,9 +7,9 @@ tags: [herd, investigation]
 byline: "Marguerite Sable"
 dateline: "—"
 date: 2026-05-14
-image: /assets/img/bull-duotone.svg
-image_alt: "A duotone illustration of a charging bronze bull beneath a red halo — the Herd of God's 'first god,' the Calf."
-cutline: "THE FIRST GOD, AS THE HERD DEPICTS IT — the bull worshipped in its young form as a calf. Illustration, Cult News data desk."
+image: /assets/img/cultnews_images/three-launches-inside-the-ritual-that-keeps-failing.jpg
+image_alt: "The Herd of God's central rite, which the group frames and numbers like rocket launches."
+cutline: "The rite the Herd numbers like launches. — Cult News"
 related: [the-trader-who-heard-the-bull, for-the-record-the-second-attempt, the-golden-calf-explained]
 ---
 

@@ -7,6 +7,9 @@ tags: [newage, contact, feature]
 byline: "Nadia Holloway"
 dateline: "SEDONA, Ariz."
 date: 2026-05-30
+image: /assets/img/cultnews_images/eleven-landing-dates-later-the-ninth-wave-still-waits.jpg
+image_alt: "The Ninth Wave, a Sedona contactee group awaiting a starship that has yet to arrive."
+cutline: "Still waiting on the twelfth date: the Ninth Wave, Sedona. — Cult News"
 related: [the-frequency-was-too-high]
 ---
 

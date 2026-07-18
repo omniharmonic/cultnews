@@ -7,6 +7,9 @@ tags: [eco, gaia, feature]
 byline: "Nadia Holloway"
 dateline: "MENDOCINO, Calif."
 date: 2026-05-25
+image: /assets/img/cultnews_images/they-want-to-be-compost-for-the-next-world.jpg
+image_alt: "The Ocean Mother, whose faithful expect to become soil for a remade world."
+cutline: "Becoming soil: the Ocean Mother, Mendocino. — Cult News"
 related: [eleven-landing-dates-later-the-ninth-wave-still-waits]
 ---
 

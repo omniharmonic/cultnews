@@ -24,7 +24,7 @@ twitter:
   username: omniharmonic
   card: summary_large_image
 # Default social/share image (jekyll-seo-tag). Per-article `image:` overrides.
-image: /assets/img/og-image.png
+image: /assets/img/cultnews_images/og-image.jpg
 logo: /assets/img/favicon.svg
 
 # ── Build ────────────────────────────────────────────────────────────────────
@@ -49,12 +49,14 @@ defaults:
   - scope: { path: "", type: "posts" }
     values:
       layout: "article"
+      # Fallback article image for future posts that don't set their own.
+      image: "/assets/img/cultnews_images/default.jpg"
   # Give standalone pages (home, sections, about, tips) a default social image
   # WITHOUT touching posts — the article layout only renders `image` as an
   # inline figure, so scoping to `pages` keeps story figures opt-in.
   - scope: { path: "", type: "pages" }
     values:
-      image: "/assets/img/og-image.png"
+      image: "/assets/img/cultnews_images/og-image.jpg"
 
 exclude:
   - .claude/

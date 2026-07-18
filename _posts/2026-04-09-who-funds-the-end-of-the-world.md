@@ -7,6 +7,9 @@ tags: [herd, money]
 byline: "Dev Okafor"
 dateline: "SAN FRANCISCO"
 date: 2026-04-09
+image: /assets/img/cultnews_images/who-funds-the-end-of-the-world.jpg
+image_alt: "The Bay Area money that funded the Herd of God's turn to organized religion."
+cutline: "The arrival that changed the Herd's trajectory: outside money. — Cult News"
 related: [astral-travel-now-bookable, series-c-for-the-second-coming]
 ---
 

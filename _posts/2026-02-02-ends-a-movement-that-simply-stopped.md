@@ -7,6 +7,9 @@ tags: [ends]
 byline: "the Ends Desk"
 dateline: "—"
 date: 2026-02-02
+image: /assets/img/cultnews_images/ends-a-movement-that-simply-stopped.jpg
+image_alt: "A movement that dissolved quietly, without scandal or prophecy."
+cutline: "A slow return of the ordinary. — the Ends desk, Cult News"
 related: [how-the-world-learned-to-count-its-cults]
 ---
 

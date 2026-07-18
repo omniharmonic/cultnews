@@ -7,6 +7,9 @@ tags: [herd, business, money]
 byline: "Marguerite Sable"
 dateline: "—"
 date: 2026-06-01
+image: /assets/img/cultnews_images/astral-travel-now-bookable.jpg
+image_alt: "Astral Spaceways Incorporated, the Herd's commercial arm selling guided astral 'flights'."
+cutline: "The brochure is the altar: Astral Spaceways' guided flights. — Cult News"
 related: [who-funds-the-end-of-the-world, the-golden-calf-explained]
 ---
 

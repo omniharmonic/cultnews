@@ -331,6 +331,10 @@ a.chip:hover{ background:var(--accent); color:var(--bg); }
 .article--ends .article__title{ font-style:italic; }
 
 /* ── Section / hub index pages ────────────────────────────────────────────── */
+.page-hero{ margin:0 0 1.8rem; }
+.page-hero img{ width:100%; border:1px solid var(--line); display:block; }
+.page-hero figcaption{ margin-top:.4rem; }
+
 .pagehead{ border-bottom:3px double var(--ink); padding:2rem 0 1.1rem; margin-bottom:1.4rem; }
 :root[data-theme="night"] .pagehead{ border-bottom-color:var(--fg); }
 .pagehead__eyebrow{ font-family:var(--mono); text-transform:uppercase; letter-spacing:.12em; font-size:.74rem; color:var(--accent); }

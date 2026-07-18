@@ -7,6 +7,9 @@ tags: [herd, explainer, religion]
 byline: "Nadia Holloway"
 dateline: "—"
 date: 2026-02-18
+image: /assets/img/cultnews_images/the-golden-calf-explained.jpg
+image_alt: "The bull, worshipped in its young form as a calf — the Herd of God's first god."
+cutline: "Humanity's oldest god, in the Herd's telling. — Cult News"
 related: [the-trader-who-heard-the-bull, three-launches-inside-the-ritual-that-keeps-failing]
 ---
 

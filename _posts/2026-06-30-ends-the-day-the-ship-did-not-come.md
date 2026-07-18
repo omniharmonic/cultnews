@@ -7,6 +7,9 @@ tags: [ends]
 byline: "the Ends Desk"
 dateline: "—"
 date: 2026-06-30
+image: /assets/img/cultnews_images/ends-the-day-the-ship-did-not-come.jpg
+image_alt: "The quiet morning after a movement's prophesied date passes without event."
+cutline: "The morning after the date. — the Ends desk, Cult News"
 related: [eleven-landing-dates-later-the-ninth-wave-still-waits]
 ---
 

@@ -7,6 +7,9 @@ tags: [herd, profile, money]
 byline: "Marguerite Sable"
 dateline: "NEW YORK"
 date: 2026-03-02
+image: /assets/img/cultnews_images/the-trader-who-heard-the-bull.jpg
+image_alt: "Duncan Horst, in a suit, facing the financial district's bronze bull at dusk."
+cutline: "Before the congregation: the former trader at the bronze bull. — Cult News"
 related: [three-launches-inside-the-ritual-that-keeps-failing, who-funds-the-end-of-the-world]
 ---
 

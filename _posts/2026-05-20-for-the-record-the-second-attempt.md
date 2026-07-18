@@ -7,6 +7,9 @@ tags: [herd, ends]
 byline: "the Ends Desk"
 dateline: "—"
 date: 2026-05-15
+image: /assets/img/cultnews_images/for-the-record-the-second-attempt.jpg
+image_alt: "A quiet register entry for the participant lost at the Herd of God's second attempt."
+cutline: "For the record. — the Ends desk, Cult News"
 related: [three-launches-inside-the-ritual-that-keeps-failing]
 ---
 

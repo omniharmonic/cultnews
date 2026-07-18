@@ -7,6 +7,9 @@ tags: [money, transhumanism, feature]
 byline: "Marguerite Sable"
 dateline: "PHOENIX"
 date: 2026-03-19
+image: /assets/img/cultnews_images/paying-now-to-be-resurrected-later.jpg
+image_alt: "The Extropy Ark, which sells cryonic preservation as a sacrament."
+cutline: "Freeze faithfully: the Extropy Ark, Phoenix. — Cult News"
 related: [series-c-for-the-second-coming]
 ---
 

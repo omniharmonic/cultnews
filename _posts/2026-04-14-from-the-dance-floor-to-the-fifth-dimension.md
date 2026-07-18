@@ -7,6 +7,9 @@ tags: [ascension, psychedelic, feature]
 byline: "Tomas Reyes"
 dateline: "AUSTIN, Texas"
 date: 2026-04-14
+image: /assets/img/cultnews_images/from-the-dance-floor-to-the-fifth-dimension.jpg
+image_alt: "Escape Velocity, an Austin festival scene hardened into an ascension movement."
+cutline: "From the dance floor to '5D': Escape Velocity, Austin. — Cult News"
 related: [the-frequency-was-too-high]
 ---
 

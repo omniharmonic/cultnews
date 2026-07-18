@@ -7,6 +7,9 @@ tags: [money, startup, feature]
 byline: "Marguerite Sable"
 dateline: "SAN FRANCISCO"
 date: 2026-05-05
+image: /assets/img/cultnews_images/series-c-for-the-second-coming.jpg
+image_alt: "Seraph, a meditation startup whose founder pivoted the company to 'the post-human transition'."
+cutline: "When the cap table becomes a hierarchy: Seraph. — Cult News"
 related: [paying-now-to-be-resurrected-later, who-funds-the-end-of-the-world]
 ---
 

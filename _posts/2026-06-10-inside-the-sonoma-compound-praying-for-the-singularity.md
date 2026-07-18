@@ -7,6 +7,9 @@ tags: [ai, accelerationism, feature]
 byline: "Dev Okafor"
 dateline: "SONOMA, Calif."
 date: 2026-06-10
+image: /assets/img/cultnews_images/inside-the-sonoma-compound-praying-for-the-singularity.jpg
+image_alt: "Terminal Velocity's Sonoma compound, where secondhand servers run through the night."
+cutline: "Monastic hours at the Terminal Velocity compound, Sonoma. — Cult News"
 related: [the-cult-trying-to-get-banned-from-reality, who-funds-the-end-of-the-world]
 ---
 
