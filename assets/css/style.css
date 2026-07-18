@@ -132,6 +132,12 @@ hr{ border:0; border-top:var(--rule); margin:2rem 0; }
   font-family:var(--mono); font-size:.68rem; letter-spacing:.05em;
   color:var(--fg-soft); text-transform:uppercase; margin:.5rem 0 0;
 }
+/* Inner pages get a smaller return-home masthead (front page keeps the big one). */
+.nameplate--compact{ padding:1rem 0 .5rem; }
+.nameplate--compact .nameplate__name{ font-size:clamp(1.7rem, 5vw, 2.5rem); }
+.nameplate--compact .nameplate__rule{ font-size:.6rem; letter-spacing:.2em; margin-top:.35rem; }
+.nameplate--compact .nameplate__rule::before,
+.nameplate--compact .nameplate__rule::after{ width:min(14vw,80px); }
 
 /* ── Primary nav ──────────────────────────────────────────────────────────── */
 .nav{ border-top:var(--rule-ink); border-bottom:3px double var(--ink); background:var(--bg); position:sticky; top:0; z-index:40; }
@@ -257,13 +263,29 @@ a.chip:hover{ background:var(--accent); color:var(--bg); }
 .rail-box__title{ font-family:var(--mono); font-size:.7rem; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:0 0 .5rem; }
 
 /* ── Ticker (developing) ──────────────────────────────────────────────────── */
-.ticker{ border-top:var(--rule); border-bottom:var(--rule); overflow:hidden; background:var(--card); }
-.ticker__inner{ display:flex; align-items:center; gap:.6rem; white-space:nowrap; font-family:var(--mono); font-size:.74rem; padding:.4rem 0; }
-.ticker__tag{ background:var(--accent); color:#fff; padding:.15rem .5rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; flex:none; }
-.ticker__track{ display:inline-flex; gap:2.5rem; animation:tick 42s linear infinite; }
-.ticker__track a{ color:var(--fg); text-decoration:none; }
-.ticker__track a:hover{ color:var(--accent); }
-.ticker__track span::before{ content:"◆"; color:var(--accent); margin-right:.6rem; font-size:.6em; vertical-align:middle; }
+.ticker{
+  position:relative; overflow:hidden;
+  border-top:var(--rule); border-bottom:var(--rule); background:var(--card);
+  font-family:var(--mono); font-size:.74rem; line-height:1;
+  /* fade the right edge so headlines dissolve rather than hard-cut */
+  -webkit-mask-image:linear-gradient(90deg, #000 calc(100% - 3.5rem), transparent 100%);
+          mask-image:linear-gradient(90deg, #000 calc(100% - 3.5rem), transparent 100%);
+}
+/* the "Developing" chip: an opaque, pinned overlay above the scrolling track */
+.ticker__tag{
+  position:absolute; left:0; top:0; bottom:0; z-index:3;
+  display:flex; align-items:center;
+  padding:0 .7rem 0 clamp(1rem,4vw,2.25rem);
+  background:var(--accent); color:#fff;
+  text-transform:uppercase; letter-spacing:.09em; font-weight:700;
+  box-shadow:6px 0 8px -4px rgba(0,0,0,.28);
+}
+.ticker__viewport{ padding:.45rem 0; padding-left:8.5rem; }
+.ticker__track{ display:flex; width:max-content; align-items:center; gap:2.4rem; white-space:nowrap; will-change:transform; animation:tick 46s linear infinite; }
+.ticker__item{ flex:0 0 auto; white-space:nowrap; color:var(--fg); text-decoration:none; }
+.ticker__item:hover{ color:var(--accent); }
+.ticker__item::before{ content:"◆"; color:var(--accent); margin-right:.6rem; font-size:.62em; vertical-align:middle; }
+.ticker:hover .ticker__track{ animation-play-state:paused; }
 @keyframes tick{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
 
 /* ── Article ──────────────────────────────────────────────────────────────── */
@@ -337,8 +359,9 @@ a.chip:hover{ background:var(--accent); color:var(--bg); }
 
 .taxonomy{ list-style:none; margin:1.2rem 0 0; padding:0; display:grid; gap:.5rem; }
 .tax__row{ display:flex; align-items:center; gap:.7rem; text-decoration:none; color:var(--fg); font-family:var(--mono); font-size:.8rem; }
-.tax__bar-wrap{ flex:1; height:10px; background:var(--halftone-soft); border:1px solid var(--line); }
-.tax__bar{ height:100%; background:var(--slate); }
+.tax__bar-wrap{ flex:1; height:10px; background:var(--halftone-soft); border:1px solid var(--line); overflow:hidden; }
+.tax__bar{ display:block; height:100%; min-width:2px; background:var(--slate); }
+:root[data-theme="night"] .tax__bar{ background:#7d8ba0; }
 .tax__share{ width:2.6rem; text-align:right; color:var(--fg-soft); }
 .tax__row:hover .tax__label{ color:var(--accent); } .tax__row:hover .tax__bar{ background:var(--accent); }
 .tax__label{ width:12rem; max-width:42vw; }
