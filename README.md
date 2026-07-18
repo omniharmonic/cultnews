@@ -83,10 +83,10 @@ Or with a local Ruby ≥ 3.1: `bundle install && bundle exec jekyll serve`.
 
 ## Tips form
 
-`tips.html` posts to [Web3Forms](https://web3forms.com) bound to the production
-email. Set `web3forms_key` in `_config.yml` to enable live delivery; until then
-the form falls back to a prefilled `mailto:`. Honeypots + no-JS `/thanks/`
-redirect included. No accounts, no tracking — email + message only.
+`tips.html` posts to [Web3Forms](https://web3forms.com). Set `web3forms_key` in
+`_config.yml` (create a key bound to your tips inbox) to enable delivery.
+Honeypots + no-JS `/thanks/` redirect included. No accounts, no tracking —
+email + message only.
 
 ## Deploy (GitHub Pages)
 

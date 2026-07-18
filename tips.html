@@ -17,8 +17,7 @@ description: >-
 
   <form class="form" id="tips-form"
         action="https://api.web3forms.com/submit" method="POST"
-        data-access-key="{{ site.web3forms_key }}"
-        data-mailto="{{ site.production_email }}">
+        data-access-key="{{ site.web3forms_key }}">
 
     {%- comment -%} Web3Forms plumbing {%- endcomment -%}
     <input type="hidden" name="access_key" value="{{ site.web3forms_key }}">
@@ -58,19 +57,10 @@ description: >-
 
     <p class="form__note">
       No accounts, no tracking — we collect only an email and a message.
-      Prefer plain mail? Write <a href="mailto:{{ site.production_email }}?subject=Tip%20%E2%80%94%20Cult%20News">{{ site.production_email }}</a>.
     </p>
 
     <div class="form__status" id="tips-status" role="status" aria-live="polite"></div>
   </form>
-
-  {%- if site.web3forms_key == "" or site.web3forms_key == nil -%}
-  <p class="form__note" style="max-width:var(--column);margin-top:1.4rem">
-    <em>Editor&rsquo;s note (out-of-world):</em> the live relay isn&rsquo;t wired yet — until a Web3Forms
-    access key is set in <code>_config.yml</code>, this form falls back to opening your mail client to
-    <a href="mailto:{{ site.production_email }}">{{ site.production_email }}</a>.
-  </p>
-  {%- endif -%}
 </div>
 
 <script src="{{ '/assets/js/tips.js' | relative_url }}" defer></script>

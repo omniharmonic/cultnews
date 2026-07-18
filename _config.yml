@@ -14,10 +14,8 @@ description: >-
 url: "https://cultnews.news"
 baseurl: ""
 
-# Production tips address (form relay + mailto fallback). §12.3.
-production_email: "synergy@benjaminlife.one"
-# Web3Forms access key — bind to production_email at web3forms.com, then paste
-# the key here. Until set, the Tips form uses the mailto: fallback only.
+# Web3Forms access key for the Tips form relay. Create a key at web3forms.com
+# bound to your tips inbox and paste it here to enable delivery.
 web3forms_key: ""
 
 twitter:
