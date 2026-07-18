@@ -84,13 +84,13 @@ layout: default
         <tbody>
           {%- for c in site.data.cults -%}
           <tr>
-            <td class="roster__name">
+            <td class="roster__name" data-label="Movement">
               {%- if c.genre == "herd" -%}<a href="{{ '/herd/' | relative_url }}">{{ c.name }}</a>{%- else -%}{{ c.name }}{%- endif -%}
             </td>
-            <td><span class="roster__genre">{{ c.genre }}</span></td>
-            <td>{{ c.leader }}</td>
-            <td>{{ c.driver }}</td>
-            <td class="mono" style="font-size:.78rem">{{ c.status }}</td>
+            <td data-label="Genre"><span class="roster__genre">{{ c.genre }}</span></td>
+            <td data-label="Leader">{{ c.leader }}</td>
+            <td data-label="Driver">{{ c.driver }}</td>
+            <td class="mono" style="font-size:.78rem" data-label="Status">{{ c.status }}</td>
           </tr>
           {%- endfor -%}
         </tbody>

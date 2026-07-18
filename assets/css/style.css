@@ -101,6 +101,7 @@ hr{ border:0; border-top:var(--rule); margin:2rem 0; }
 }
 .topbar .wrap{ display:flex; align-items:center; justify-content:space-between; gap:1rem; padding-top:.4rem; padding-bottom:.4rem; }
 .topbar__date{ text-transform:uppercase; }
+.topbar__date-short{ display:none; }
 .topbar__right{ display:flex; align-items:center; gap:1rem; }
 .topbar a{ color:inherit; text-decoration:none; }
 .topbar a:hover{ color:var(--accent); }
@@ -429,6 +430,39 @@ a.chip:hover{ background:var(--accent); color:var(--bg); }
 .mono{ font-family:var(--mono); }
 .mt0{ margin-top:0; } .mb0{ margin-bottom:0; }
 .visually-hidden{ position:absolute!important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+
+/* ── Mobile refinements ───────────────────────────────────────────────────── */
+@media (max-width:600px){
+  /* Trim the topbar to one clean line: short date, no edition label, no tension label. */
+  .topbar__date-full, .topbar__edition, .topbar__tlabel{ display:none; }
+  .topbar__date-short{ display:inline; }
+  .topbar .wrap{ gap:.6rem; }
+  .topbar__right{ gap:.7rem; }
+}
+@media (max-width:640px){
+  /* Section nav becomes a single horizontally-scrollable row — compact while
+     sticky, with a right-edge fade hinting there's more to swipe. */
+  .nav{
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 2.2rem),transparent);
+            mask-image:linear-gradient(90deg,#000 calc(100% - 2.2rem),transparent);
+  }
+  .nav .wrap{
+    flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start;
+    -webkit-overflow-scrolling:touch; scrollbar-width:none; padding-right:2.4rem;
+  }
+  .nav .wrap::-webkit-scrollbar{ display:none; }
+  .nav a{ padding:.55rem .7rem; font-size:.94rem; }
+
+  /* Roster: a cramped 5-column table becomes one card per movement. */
+  .table-scroll{ overflow:visible; }
+  .roster thead{ display:none; }
+  .roster tbody tr{ display:block; border:1px solid var(--line); margin-bottom:.85rem; background:var(--card); }
+  .roster tbody tr:nth-child(odd){ background:var(--card); }
+  .roster td{ display:flex; gap:.7rem; border:0; border-top:1px solid var(--line); padding:.35rem .8rem; font-size:.92rem; }
+  .roster td::before{ content:attr(data-label); flex:0 0 4.2rem; font-family:var(--mono); font-size:.6rem; text-transform:uppercase; letter-spacing:.05em; color:var(--fg-soft); padding-top:.2rem; }
+  .roster td.roster__name{ display:block; font-size:1.15rem; border-top:0; border-bottom:1px solid var(--line); padding:.5rem .8rem; }
+  .roster td.roster__name::before{ display:none; }
+}
 
 /* ── Motion & print ───────────────────────────────────────────────────────── */
 @media (prefers-reduced-motion:reduce){

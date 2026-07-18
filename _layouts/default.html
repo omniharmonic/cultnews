@@ -8,9 +8,13 @@
 
   <div class="topbar">
     <div class="wrap">
-      <span class="topbar__date">{{ 'now' | date: "%A, %B %-d, %Y" }} · Late City Edition</span>
+      <span class="topbar__date">
+        <span class="topbar__date-full">{{ 'now' | date: "%A, %B %-d, %Y" }}</span>
+        <span class="topbar__date-short">{{ 'now' | date: "%b %-d, %Y" }}</span>
+        <span class="topbar__edition"> · Late City Edition</span>
+      </span>
       <span class="topbar__right">
-        <a href="{{ '/index/' | relative_url }}">Eschatological tension: <strong style="color:var(--accent)">{{ site.data.cult_index.tension }} ▲</strong></a>
+        <a href="{{ '/index/' | relative_url }}"><span class="topbar__tlabel">Eschatological tension: </span><strong style="color:var(--accent)">{{ site.data.cult_index.tension }} ▲</strong></a>
         <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Late Edition</button>
       </span>
     </div>
