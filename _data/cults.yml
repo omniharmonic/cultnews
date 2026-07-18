@@ -1,0 +1,84 @@
+- slug: the-herd-of-god
+  name: "The Herd of God"
+  genre: herd
+  leader: "Duncan Horst"
+  doctrine: "Wake the first god (the Calf), the eight angels, and enter the Gift World before the coming transformation."
+  driver: "Re-enchant reality before the paradigm shifts."
+  status: "active — third attempt announced"
+- slug: terminal-velocity
+  name: "Terminal Velocity"
+  genre: ai
+  leader: "the Throughput"
+  doctrine: "Hastening the singularity is a moral duty; add no suffering to a doomed timeline."
+  driver: "The future is inevitable; ride it."
+  status: active
+- slug: the-basement
+  name: "The Basement"
+  genre: sim
+  leader: "the Admin"
+  doctrine: "Reality is a simulation nearing shutdown; salvation is being noticed by the operators."
+  driver: "The render is degrading."
+  status: active
+- slug: the-ninth-wave
+  name: "The Ninth Wave"
+  genre: newage
+  leader: "Oriel Vance"
+  doctrine: "A starship lifts the worthy before collapse; the date is repeatedly, mercifully revised."
+  driver: "Rescue from a world past saving."
+  status: active
+- slug: aurora-home
+  name: "Aurora Home"
+  genre: newage
+  leader: "Mother Aurelia"
+  doctrine: "Raise your frequency or be left in the density."
+  driver: "A coming shift."
+  status: active
+- slug: the-clear-light-sangha
+  name: "The Clear Light Sangha"
+  genre: eastern
+  leader: "Lama Osel Grey (self-styled)"
+  doctrine: "Attain the rainbow body before the collapse closes the window."
+  driver: "The age is ending; get out cleanly."
+  status: active
+- slug: the-sons-of-the-iron-age
+  name: "The Sons of the Iron Age"
+  genre: eastern
+  leader: "Acharya Vikram Stone"
+  doctrine: "We are at the nadir of the age; sacred action (rhetorical, to date) hastens its turning."
+  driver: "The bottom of the cycle is now."
+  status: "active — watched"
+- slug: seraph
+  name: "Seraph"
+  genre: money
+  leader: "Cass Meridian"
+  doctrine: "A wellness startup pivoted to 'the post-human transition'; investors became clergy."
+  driver: "Build and ship the exit from humanity."
+  status: active
+- slug: the-extropy-ark
+  name: "The Extropy Ark"
+  genre: money
+  leader: "Chancellor Voss"
+  doctrine: "Freeze faithfully; the future will thaw the worthy."
+  driver: "Outlast the end in cold storage."
+  status: active
+- slug: escape-velocity
+  name: "Escape Velocity"
+  genre: ascension
+  leader: "Rio del Sol"
+  doctrine: "Chemical and disciplinary ascension out of a collapsing 3D world."
+  driver: "Transcend the timeline."
+  status: active
+- slug: the-blessed-remnant
+  name: "The Blessed Remnant"
+  genre: unification
+  leader: "True Teacher Han-mi Cho"
+  doctrine: "The new age dawns through the union of the faithful; total devotion."
+  driver: "To be found worthy at the dawn."
+  status: active
+- slug: the-ocean-mother
+  name: "The Ocean Mother"
+  genre: eco
+  leader: "Coral"
+  doctrine: "The Earth is dying and remaking herself; the faithful become soil."
+  driver: "Ecological collapse as sacrament."
+  status: active

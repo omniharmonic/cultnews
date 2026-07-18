@@ -1,0 +1,64 @@
+---
+layout: default
+---
+{%- assign is_ends = false -%}{%- if page.section == "ends" -%}{%- assign is_ends = true -%}{%- endif -%}
+
+<div class="wrap">
+  <article class="article{% if is_ends %} article--ends{% endif %}">
+    <header class="article__head">
+      <div class="article__kicker">
+        {% include section-tag.html key=page.section %}
+        {%- for t in page.tags -%}
+          {%- unless t == page.section -%}<a class="chip" href="{{ '/index/' | relative_url }}#taxonomy">{{ t }}</a>{%- endunless -%}
+        {%- endfor -%}
+      </div>
+      <h1 class="article__title">{{ page.title }}</h1>
+      {%- if page.deck -%}<p class="article__deck">{{ page.deck }}</p>{%- endif -%}
+      <div class="article__meta">
+        {% include byline.html name=page.byline dateline=page.dateline %}
+        <span class="dateline">{{ page.date | date: "%b %-d, %Y" }}</span>
+      </div>
+    </header>
+
+    {%- if page.image -%}
+    <figure class="article__figure">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}" loading="lazy">
+      {%- if page.cutline -%}<figcaption class="article__cutline">{{ page.cutline }}</figcaption>{%- endif -%}
+    </figure>
+    {%- endif -%}
+
+    <div class="article__body">
+      {%- if page.pull_quote -%}
+        {%- comment -%} render body, injecting a pull-quote is left to markdown blockquotes {%- endcomment -%}
+      {%- endif -%}
+      {{ content }}
+    </div>
+
+    {%- comment -%} ── Related coverage ── {%- endcomment -%}
+    {%- if page.related and page.related.size > 0 -%}
+      {%- assign rel = "" | split: "" -%}
+      {%- for slug in page.related -%}
+        {%- for p in site.posts -%}{%- if p.slug == slug -%}{%- assign rel = rel | push: p -%}{%- endif -%}{%- endfor -%}
+      {%- endfor -%}
+      {%- if rel.size > 0 -%}
+      <nav class="related" aria-label="Related coverage">
+        <p class="related__title">Related coverage</p>
+        <ul class="related__list">
+          {%- for p in rel -%}
+            <li>
+              <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+              <span class="dateline" style="display:block;margin-top:.15rem">{% include section-tag.html key=p.section plain=true %} · {{ p.byline }}</span>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+      {%- endif -%}
+    {%- endif -%}
+
+    <aside class="article-cta">
+      A work of fiction from <em>The Herd of God</em>. Every group we cover is invented; the dread is real.
+      Have something for the desk? <a href="{{ '/tips/' | relative_url }}">Send a tip</a>
+      or write <a href="mailto:{{ site.production_email }}">{{ site.production_email }}</a>.
+    </aside>
+  </article>
+</div>

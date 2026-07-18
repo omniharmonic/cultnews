@@ -1,0 +1,76 @@
+---
+layout: default
+title: "Send a Tip"
+permalink: /tips/
+nav_key: tips
+compact_nameplate: true
+description: >-
+  Send a tip to Cult News. Seen a movement forming, a revised end-date, or a
+  room no one came out of? The tip line is open.
+---
+<div class="wrap">
+  <header class="pagehead">
+    <p class="pagehead__eyebrow">The tip line</p>
+    <h1 class="pagehead__title">Send a Tip</h1>
+    <p class="pagehead__deck">Seen a movement forming? A revised end-date? A room no one came out of? Or you want to reach the humans who made this. The desk reads everything between deadlines.</p>
+  </header>
+
+  <form class="form" id="tips-form"
+        action="https://api.web3forms.com/submit" method="POST"
+        data-access-key="{{ site.web3forms_key }}"
+        data-mailto="{{ site.production_email }}">
+
+    {%- comment -%} Web3Forms plumbing {%- endcomment -%}
+    <input type="hidden" name="access_key" value="{{ site.web3forms_key }}">
+    <input type="hidden" name="from_name" value="Cult News tip line">
+    <input type="hidden" name="redirect" value="{{ site.url }}{{ site.baseurl }}/thanks/">
+    {%- comment -%} honeypot (Web3Forms native) {%- endcomment -%}
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    {%- comment -%} extra honeypot for no-JS integrity {%- endcomment -%}
+    <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>
+
+    <div class="form__row">
+      <label for="f-name">Your name <span class="muted">(or a handle)</span></label>
+      <input id="f-name" name="name" type="text" autocomplete="name" required>
+    </div>
+
+    <div class="form__row">
+      <label for="f-email">Email <span class="muted">(so a reporter can reach you)</span></label>
+      <input id="f-email" name="email" type="email" autocomplete="email" required>
+    </div>
+
+    <div class="form__row">
+      <label for="f-subject">This is a…</label>
+      <select id="f-subject" name="subject" required>
+        <option value="Tip — Cult News">Tip</option>
+        <option value="Press — Cult News">Press</option>
+        <option value="Casting — Cult News">Casting</option>
+        <option value="Is this real? — Cult News">Is this real?</option>
+      </select>
+    </div>
+
+    <div class="form__row">
+      <label for="f-message">Message</label>
+      <textarea id="f-message" name="message" required placeholder="What did you see? Names, dates, and revised end-dates especially welcome."></textarea>
+    </div>
+
+    <button class="btn" type="submit">Send to the desk</button>
+
+    <p class="form__note">
+      No accounts, no tracking — we collect only an email and a message.
+      Prefer plain mail? Write <a href="mailto:{{ site.production_email }}?subject=Tip%20%E2%80%94%20Cult%20News">{{ site.production_email }}</a>.
+    </p>
+
+    <div class="form__status" id="tips-status" role="status" aria-live="polite"></div>
+  </form>
+
+  {%- if site.web3forms_key == "" or site.web3forms_key == nil -%}
+  <p class="form__note" style="max-width:var(--column);margin-top:1.4rem">
+    <em>Editor&rsquo;s note (out-of-world):</em> the live relay isn&rsquo;t wired yet — until a Web3Forms
+    access key is set in <code>_config.yml</code>, this form falls back to opening your mail client to
+    <a href="mailto:{{ site.production_email }}">{{ site.production_email }}</a>.
+  </p>
+  {%- endif -%}
+</div>
+
+<script src="{{ '/assets/js/tips.js' | relative_url }}" defer></script>

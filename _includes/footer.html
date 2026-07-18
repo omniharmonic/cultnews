@@ -1,0 +1,41 @@
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <h3 class="footer__col">The fiction seam</h3>
+        <p class="footer__seam">
+          <b>Cult News</b> is the in-world press desk of the immersive production
+          <b><em>The Herd of God</em></b>. Every group we cover is invented. The dread is real.
+          To reach the humans who made it, <a href="{{ '/tips/' | relative_url }}">send a tip</a>.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h3>Desks</h3>
+        <ul>
+          {%- for s in site.data.site.sections -%}
+            {%- if s.key == "investigations" -%}
+              <li><a href="{{ '/investigations/' | relative_url }}">{{ s.label }}</a></li>
+            {%- else -%}
+              <li><a href="{{ '/' | append: s.key | append: '/' | relative_url }}">{{ s.label }}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>The paper</h3>
+        <ul>
+          <li><a href="{{ '/index/' | relative_url }}">The Cult Index</a></li>
+          <li><a href="{{ '/herd/' | relative_url }}">The Herd of God</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">About &amp; masthead</a></li>
+          <li><a href="{{ '/tips/' | relative_url }}">Send a tip</a></li>
+          {%- if site.sister_sites.astral -%}<li><a href="{{ site.sister_sites.astral }}" rel="noopener">Astral Spaceways ↗</a></li>{%- endif -%}
+          {%- if site.sister_sites.herd_wiki -%}<li><a href="{{ site.sister_sites.herd_wiki }}" rel="noopener">herdofgod.com ↗</a></li>{%- endif -%}
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span class="footer__est">Est. in the shadow of the millennium · A work of fiction</span>
+      <span>© {{ 'now' | date: "%Y" }} Cult News · for <em>The Herd of God</em></span>
+    </div>
+  </div>
+</footer>

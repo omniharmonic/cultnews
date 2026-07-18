@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+<body class="{{ page.body_class }}">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span class="topbar__date">{{ 'now' | date: "%A, %B %-d, %Y" }} · Late City Edition</span>
+      <span class="topbar__right">
+        <a href="{{ '/index/' | relative_url }}">Eschatological tension: <strong style="color:var(--accent)">{{ site.data.cult_index.tension }} ▲</strong></a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">Late Edition</button>
+      </span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    {% include nameplate.html compact=page.compact_nameplate %}
+  </div>
+  {% include nav.html %}
+
+  <main id="main">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/theme.js' | relative_url }}" defer></script>
+</body>
+</html>

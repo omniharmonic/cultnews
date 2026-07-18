@@ -1,0 +1,67 @@
+{%- comment -%}
+  THE CULT INDEX — front-page rail. Hand-authored data from _data/cult_index.yml.
+  Purely presentational: an argument as an instrument.
+{%- endcomment -%}
+{%- assign ci = site.data.cult_index -%}
+
+{%- comment -%} sparkline max for scaling {%- endcomment -%}
+{%- assign maxc = 0 -%}
+{%- for f in ci.formations_per_year -%}{%- if f.count > maxc -%}{%- assign maxc = f.count -%}{%- endif -%}{%- endfor -%}
+
+{%- comment -%} tension → lit segments out of 4 {%- endcomment -%}
+{%- assign tU = ci.tension | upcase -%}
+{%- case tU -%}
+  {%- when "CALM" -%}{%- assign lit = 1 -%}
+  {%- when "GUARDED" -%}{%- assign lit = 2 -%}
+  {%- when "ELEVATED" -%}{%- assign lit = 3 -%}
+  {%- else -%}{%- assign lit = 4 -%}
+{%- endcase -%}
+
+{%- comment -%} cult of the week lookup {%- endcomment -%}
+{%- assign cotw = false -%}
+{%- for c in site.data.cults -%}{%- if c.slug == ci.cult_of_the_week -%}{%- assign cotw = c -%}{%- endif -%}{%- endfor -%}
+{%- if cotw.genre == "herd" -%}{%- assign cotw_href = "/herd/" | relative_url -%}{%- else -%}{%- assign cotw_href = "/index/" | relative_url -%}{%- endif -%}
+
+<aside class="index-rail" aria-labelledby="index-rail-title">
+  <div class="index-rail__head">
+    <span class="index-rail__title" id="index-rail-title">The Cult Index</span>
+    <span class="index-rail__upd">updated {{ ci.updated | downcase }}</span>
+  </div>
+  <div class="index-rail__body">
+    <div class="stat"><span class="stat__label">Active movements</span><span class="stat__dots"></span><span class="stat__val">{{ ci.active_movements }}</span></div>
+    <div class="stat"><span class="stat__label">Founded this year</span><span class="stat__dots"></span><span class="stat__val">{{ ci.founded_this_year }}</span></div>
+    <div class="stat"><span class="stat__label">Reached end, continued</span><span class="stat__dots"></span><span class="stat__val">{{ ci.reached_end_continued }}</span></div>
+
+    <div class="tension">
+      <div class="stat"><span class="stat__label">Eschatological tension</span><span class="stat__dots"></span><span class="stat__val stat__val--alert">{{ ci.tension }} ▲</span></div>
+      <div class="tension__scale" role="img" aria-label="Tension meter: {{ ci.tension }}, {{ lit }} of 4">
+        {%- for i in (1..4) -%}
+          <span class="tension__seg{% if i <= lit %} tension__seg--on{% endif %}"></span>
+        {%- endfor -%}
+      </div>
+      <div class="tension__labels"><span>Calm</span><span>Guarded</span><span>Elevated</span><span>Imminent</span></div>
+    </div>
+
+    <div class="spark">
+      <div class="spark__title">Formations per year</div>
+      {%- for f in ci.formations_per_year -%}
+        {%- assign pct = f.count | times: 100 | divided_by: maxc -%}
+        <div class="spark__row">
+          <span class="spark__year">{{ f.year }}</span>
+          <span class="spark__bar" style="width:{{ pct }}%"></span>
+          <span class="spark__n">{{ f.count }}</span>
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if cotw -%}
+    <div class="rail-cotw">
+      <div class="rail-cotw__label">Cult of the Week ▸</div>
+      <div class="rail-cotw__name"><a href="{{ cotw_href }}">{{ cotw.name }}</a></div>
+      <div class="rail-cotw__doc">{{ cotw.doctrine }}</div>
+    </div>
+    {%- endif -%}
+
+    <a class="rail-link" href="{{ '/index/' | relative_url }}">Read the full Index ▸</a>
+  </div>
+</aside>

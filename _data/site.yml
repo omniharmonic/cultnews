@@ -1,0 +1,24 @@
+name: "Cult News"
+tagline: "Dispatches from the End."
+nameplate_note: "Eschatological affairs since the shadow of the millennium."
+sections:
+  - {key: ai,            label: "AI & Accelerationism"}
+  - {key: newage,        label: "New Age & Contact"}
+  - {key: eastern,       label: "Eastern & Non-Dual"}
+  - {key: money,         label: "Startups, Money & Movements"}
+  - {key: ascension,     label: "Psychedelic & Ascension"}
+  - {key: unification,   label: "Devotion & Unification"}
+  - {key: ends,          label: "Ends"}
+  - {key: herd,          label: "The Herd of God"}
+  - {key: investigations, label: "Investigations"}
+# Sections shown in the primary top navigation (a curated subset; the full set
+# is reachable from the Index taxonomy).
+nav:
+  - {key: ai,            label: "AI"}
+  - {key: newage,        label: "New Age"}
+  - {key: eastern,       label: "Eastern"}
+  - {key: money,         label: "Money"}
+  - {key: ascension,     label: "Ascension"}
+  - {key: herd,          label: "The Herd"}
+  - {key: index,         label: "The Index"}
+seam: "Cult News is the in-world press desk of the immersive production The Herd of God. Every group we cover is invented. The dread is real. To reach the humans who made it, send a tip."

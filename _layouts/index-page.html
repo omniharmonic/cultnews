@@ -1,0 +1,95 @@
+---
+layout: default
+---
+{%- assign ci = site.data.cult_index -%}
+{%- assign maxc = 0 -%}
+{%- for f in ci.formations_per_year -%}{%- if f.count > maxc -%}{%- assign maxc = f.count -%}{%- endif -%}{%- endfor -%}
+
+<div class="wrap">
+  <header class="pagehead">
+    <p class="pagehead__eyebrow">The Data Desk</p>
+    <h1 class="pagehead__title">The Cult Index</h1>
+    <p class="pagehead__deck">A standing count of the world&rsquo;s active apocalyptic movements — the argument, rendered as an instrument.</p>
+  </header>
+
+  <div class="index-hero">
+    <div class="prose">
+      {%- comment -%} This page is authored as an .html file with a markdown body, so convert it. {%- endcomment -%}
+      {{ content | markdownify }}
+    </div>
+
+    <aside>
+      <div class="bigspark">
+        <p class="bigspark__title">Formations per year, 1974 → now</p>
+        {%- for f in ci.formations_per_year -%}
+          {%- assign pct = f.count | times: 100 | divided_by: maxc -%}
+          <div class="bigspark__row">
+            <span class="bigspark__year">{{ f.year }}</span>
+            <span class="bigspark__bar" style="width:{{ pct }}%"></span>
+            <span class="bigspark__n">{{ f.count }}</span>
+          </div>
+        {%- endfor -%}
+      </div>
+
+      <div class="bigspark" style="margin-top:1.2rem">
+        <p class="bigspark__title">The count, today</p>
+        <div class="stat"><span class="stat__label">Active movements</span><span class="stat__dots"></span><span class="stat__val">{{ ci.active_movements }}</span></div>
+        <div class="stat"><span class="stat__label">Founded this year</span><span class="stat__dots"></span><span class="stat__val">{{ ci.founded_this_year }}</span></div>
+        <div class="stat"><span class="stat__label">Reached end, continued</span><span class="stat__dots"></span><span class="stat__val">{{ ci.reached_end_continued }}</span></div>
+        <div class="stat"><span class="stat__label">Eschatological tension</span><span class="stat__dots"></span><span class="stat__val stat__val--alert">{{ ci.tension }} ▲</span></div>
+      </div>
+    </aside>
+  </div>
+
+  <section id="taxonomy" style="margin-top:3rem">
+    <div class="secblock__rule"><span class="secblock__title">The taxonomy of the end</span></div>
+    <p class="muted" style="max-width:var(--measure)">Eight genres of apocalypse, by share of the active population. Each is a door into that desk.</p>
+    <ul class="taxonomy">
+      {%- for t in ci.taxonomy -%}
+        {%- assign share_pct = t.share | times: 100 -%}
+        {%- assign linkable = false -%}
+        {%- for s in site.data.site.sections -%}{%- if s.key == t.key -%}{%- assign linkable = true -%}{%- endif -%}{%- endfor -%}
+        {%- if linkable -%}
+          <li><a class="tax__row" href="{{ '/' | append: t.key | append: '/' | relative_url }}">
+            <span class="tax__label">{{ t.label }}</span>
+            <span class="tax__bar-wrap"><span class="tax__bar" style="width:{{ share_pct }}%"></span></span>
+            <span class="tax__share">{{ share_pct | round }}%</span>
+          </a></li>
+        {%- else -%}
+          <li><span class="tax__row">
+            <span class="tax__label">{{ t.label }}</span>
+            <span class="tax__bar-wrap"><span class="tax__bar" style="width:{{ share_pct }}%"></span></span>
+            <span class="tax__share">{{ share_pct | round }}%</span>
+          </span></li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </section>
+
+  <section id="roster" style="margin-top:3rem">
+    <div class="secblock__rule"><span class="secblock__title">The register — a starting stable</span></div>
+    <p class="muted" style="max-width:var(--measure)">A partial roll of movements the desk currently tracks. Trivially extensible; the population is larger than the register.</p>
+    <div class="table-scroll">
+      <table class="roster">
+        <thead>
+          <tr><th>Movement</th><th>Genre</th><th>Leader</th><th>Driver</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          {%- for c in site.data.cults -%}
+          <tr>
+            <td class="roster__name">
+              {%- if c.genre == "herd" -%}<a href="{{ '/herd/' | relative_url }}">{{ c.name }}</a>{%- else -%}{{ c.name }}{%- endif -%}
+            </td>
+            <td><span class="roster__genre">{{ c.genre }}</span></td>
+            <td>{{ c.leader }}</td>
+            <td>{{ c.driver }}</td>
+            <td class="mono" style="font-size:.78rem">{{ c.status }}</td>
+          </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="muted mono center" style="margin-top:2.5rem;font-size:.75rem">The Index is updated weekly. Corrections to the corrections desk.</p>
+</div>

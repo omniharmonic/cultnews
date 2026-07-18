@@ -1,0 +1,5 @@
+{%- comment -%} Reporter byline chip. Params: name, dateline (optional). {%- endcomment -%}
+<span class="byline">By <b>{{ include.name }}</b></span>
+{%- if include.dateline and include.dateline != "—" -%}
+<span class="dateline">{{ include.dateline }} —</span>
+{%- endif -%}

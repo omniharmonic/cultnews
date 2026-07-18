@@ -1,0 +1,75 @@
+# ── Cult News — Jekyll config ────────────────────────────────────────────────
+# In-world third-party news publication for the immersive production
+# "The Herd of God." Everything covered here is invented; the dread is real.
+
+title: "Cult News"
+tagline: "Dispatches from the End."
+description: >-
+  The wire service of the end of the world — covering the exponential rise of
+  apocalyptic movements, including the Herd of God. An in-world artifact of the
+  immersive production The Herd of God. Every group we cover is invented.
+
+# Deployed as a GitHub Pages *project* site first (subpath), then a custom
+# domain. When cultnews.news goes live, set url to https://cultnews.news and
+# baseurl to "" (empty), and add the CNAME file.
+url: "https://omniharmonic.github.io"
+baseurl: "/cultnews"
+
+# Production tips address (form relay + mailto fallback). §12.3.
+production_email: "synergy@benjaminlife.one"
+# Web3Forms access key — bind to production_email at web3forms.com, then paste
+# the key here. Until set, the Tips form uses the mailto: fallback only.
+web3forms_key: ""
+
+twitter:
+  username: omniharmonic
+  card: summary_large_image
+# Default social/share image (jekyll-seo-tag). Per-article `image:` overrides.
+image: /assets/img/og-image.png
+logo: /assets/img/favicon.svg
+
+# Cross-property in-world links (three lenses on one world). §18.6
+sister_sites:
+  astral: "https://astralspaceways.com"
+  herd_wiki: "https://herdofgod.com"
+
+# ── Build ────────────────────────────────────────────────────────────────────
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
+permalink: /story/:slug/
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections/defaults: every post is an article by default.
+defaults:
+  - scope: { path: "", type: "posts" }
+    values:
+      layout: "article"
+  # Give standalone pages (home, sections, about, tips) a default social image
+  # WITHOUT touching posts — the article layout only renders `image` as an
+  # inline figure, so scoping to `pages` keeps story figures opt-in.
+  - scope: { path: "", type: "pages" }
+    values:
+      image: "/assets/img/og-image.png"
+
+exclude:
+  - .claude/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - scratchpad/
+  - "*.md.bak"
+
+feed:
+  path: /feed.xml

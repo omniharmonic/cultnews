@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="wrap">
+  <header class="pagehead">
+    {%- if page.eyebrow -%}<p class="pagehead__eyebrow">{{ page.eyebrow }}</p>{%- endif -%}
+    <h1 class="pagehead__title">{{ page.title }}</h1>
+    {%- if page.deck -%}<p class="pagehead__deck">{{ page.deck }}</p>{%- endif -%}
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+</div>

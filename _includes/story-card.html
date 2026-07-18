@@ -1,0 +1,18 @@
+{%- comment -%}
+  Story card. Params:
+    post  — the post object (required)
+    class — extra class, e.g. "card--sm" (optional)
+    deck  — set false to hide deck (optional)
+{%- endcomment -%}
+{%- assign p = include.post -%}
+<article class="card {{ include.class }}">
+  <div class="card__kicker">
+    {% include section-tag.html key=p.section %}
+    {%- if p.dateline and p.dateline != "—" -%}<span class="dateline">{{ p.dateline }}</span>{%- endif -%}
+  </div>
+  <h3 class="card__head"><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+  {%- unless include.deck == false -%}
+  <p class="card__deck">{{ p.deck | strip_html | truncate: 150 }}</p>
+  {%- endunless -%}
+  {% include byline.html name=p.byline %}
+</article>

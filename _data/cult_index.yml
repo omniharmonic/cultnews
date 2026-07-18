@@ -1,0 +1,27 @@
+active_movements: 103
+founded_this_year: 19
+reached_end_continued: 41
+tension: "ELEVATED"
+updated: "This week"
+formations_per_year:
+  - {year: 1974, count: 2}
+  - {year: 1979, count: 3}
+  - {year: 1985, count: 5}
+  - {year: 1991, count: 6}
+  - {year: 1997, count: 9}
+  - {year: 2003, count: 11}
+  - {year: 2009, count: 17}
+  - {year: 2015, count: 28}
+  - {year: 2020, count: 44}
+  - {year: 2023, count: 71}
+  - {year: 2026, count: 103}
+taxonomy:
+  - {key: ai,          label: "AI & Accelerationism",    share: 0.22}
+  - {key: newage,      label: "New Age & Contact",       share: 0.18}
+  - {key: eastern,     label: "Eastern & Non-Dual",      share: 0.12}
+  - {key: money,       label: "Startups & Money",        share: 0.14}
+  - {key: ascension,   label: "Psychedelic & Ascension", share: 0.13}
+  - {key: unification, label: "Devotion & Unification",  share: 0.09}
+  - {key: eco,         label: "Eco & Gaia",              share: 0.07}
+  - {key: sim,         label: "Simulation",              share: 0.05}
+cult_of_the_week: "the-herd-of-god"

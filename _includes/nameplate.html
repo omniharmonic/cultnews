@@ -1,0 +1,11 @@
+{%- comment -%}
+  The nameplate. On the front page it is the top of the paper; elsewhere it is a
+  compact return-home masthead. Pass compact=true from inner pages.
+{%- endcomment -%}
+<header class="nameplate{% if include.compact %} nameplate--compact{% endif %}">
+  <h1 class="nameplate__name"><a href="{{ '/' | relative_url }}">{{ site.data.site.name | default: "Cult News" }}</a></h1>
+  <p class="nameplate__rule">{{ site.data.site.tagline | default: site.tagline }}</p>
+  {%- unless include.compact -%}
+  <p class="nameplate__note">{{ site.data.site.nameplate_note }}</p>
+  {%- endunless -%}
+</header>

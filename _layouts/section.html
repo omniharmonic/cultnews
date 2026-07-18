@@ -1,0 +1,41 @@
+---
+layout: default
+---
+{%- comment -%}
+  Section / topic-hub index. Front-matter:
+    section    — section key (used for nav highlight + default filter)
+    filter_tag — if set, aggregate posts by this TAG instead of section
+                 (the /herd hub is a tag filter, so it can pull in the Ends entry)
+    title, eyebrow, deck — page head copy
+  Body (markdown) renders as an intro above the list.
+{%- endcomment -%}
+
+{%- if page.filter_tag -%}
+  {%- assign posts = site.posts | where_exp: "p", "p.tags contains page.filter_tag" -%}
+{%- else -%}
+  {%- assign posts = site.posts | where: "section", page.section -%}
+{%- endif -%}
+
+<div class="wrap">
+  <header class="pagehead">
+    <p class="pagehead__eyebrow">{{ page.eyebrow | default: "The Desk" }}</p>
+    <h1 class="pagehead__title">{{ page.title }}</h1>
+    {%- if page.deck -%}<p class="pagehead__deck">{{ page.deck }}</p>{%- endif -%}
+  </header>
+
+  {%- comment -%} Section pages are .html files; their optional intro is markdown, so convert it. {%- endcomment -%}
+  {%- assign intro = content | markdownify | strip -%}
+  {%- if intro != "" -%}
+  <div class="prose" style="margin-bottom:1.6rem">{{ intro }}</div>
+  {%- endif -%}
+
+  {%- if posts.size > 0 -%}
+  <ul class="storylist">
+    {%- for p in posts -%}
+      <li class="storylist__item">{% include story-card.html post=p %}</li>
+    {%- endfor -%}
+  </ul>
+  {%- else -%}
+  <p class="muted mono">No dispatches filed to this desk yet. Check back between deadlines.</p>
+  {%- endif -%}
+</div>

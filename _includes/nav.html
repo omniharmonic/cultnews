@@ -1,0 +1,16 @@
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    {%- for item in site.data.site.nav -%}
+      {%- if item.key == "index" -%}
+        {%- assign href = "/index/" | relative_url -%}
+      {%- else -%}
+        {%- assign href = "/" | append: item.key | append: "/" | relative_url -%}
+      {%- endif -%}
+      {%- assign cur = "" -%}
+      {%- if page.section == item.key -%}{%- assign cur = "page" -%}{%- endif -%}
+      {%- if page.nav_key == item.key -%}{%- assign cur = "page" -%}{%- endif -%}
+      <a href="{{ href }}"{% if cur == "page" %} aria-current="page"{% endif %}>{{ item.label }}</a>
+    {%- endfor -%}
+    <a href="{{ '/tips/' | relative_url }}" data-tips{% if page.nav_key == "tips" %} aria-current="page"{% endif %}>Tips</a>
+  </div>
+</nav>

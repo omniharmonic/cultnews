@@ -1,0 +1,14 @@
+{%- comment -%}
+  Renders a linked section tag (mono chip, press-red) for a section key.
+  Params: key (required), plain=true for non-linked text.
+{%- endcomment -%}
+{%- assign _key = include.key -%}
+{%- assign _label = _key -%}
+{%- for s in site.data.site.sections -%}
+  {%- if s.key == _key -%}{%- assign _label = s.label -%}{%- endif -%}
+{%- endfor -%}
+{%- if include.plain -%}
+<span class="section-tag">{{ _label }}</span>
+{%- else -%}
+<a class="section-tag" href="{{ '/' | append: _key | append: '/' | relative_url }}">{{ _label }}</a>
+{%- endif -%}

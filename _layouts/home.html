@@ -1,0 +1,98 @@
+---
+layout: default
+---
+{%- comment -%}
+  FRONT PAGE. Assembles the paper from the posts collection:
+  a lead well + the Cult Index rail, then a section block per desk.
+  Pin the lead with `lead_slug` in index.html front-matter; else newest post.
+{%- endcomment -%}
+
+{%- assign lead = false -%}
+{%- if page.lead_slug -%}
+  {%- for p in site.posts -%}{%- if p.slug == page.lead_slug -%}{%- assign lead = p -%}{%- endif -%}{%- endfor -%}
+{%- endif -%}
+{%- unless lead -%}{%- assign lead = site.posts.first -%}{%- endunless -%}
+
+{%- comment -%} secondary well: newest posts that aren't the lead {%- endcomment -%}
+{%- assign well = "" | split: "" -%}
+{%- for p in site.posts -%}
+  {%- unless p.slug == lead.slug -%}
+    {%- if well.size < 4 -%}{%- assign well = well | push: p -%}{%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}
+
+{% include ticker.html %}
+
+<div class="wrap">
+  <div class="front">
+    <div class="front__main">
+
+      <div class="lead">
+        {%- if lead.image -%}
+        <figure class="lead__art">
+          <img src="{{ lead.image | relative_url }}" alt="{{ lead.image_alt | default: lead.title | escape }}" width="1200" height="675" loading="eager">
+        </figure>
+        {%- endif -%}
+        <div class="lead__kicker card__kicker">
+          {% include section-tag.html key=lead.section %}
+          {%- if lead.dateline and lead.dateline != "—" -%}<span class="dateline">{{ lead.dateline }} —</span>{%- endif -%}
+        </div>
+        <h2 class="lead__head"><a href="{{ lead.url | relative_url }}">{{ lead.title }}</a></h2>
+        <p class="lead__deck">{{ lead.deck | strip_html }}</p>
+        {% include byline.html name=lead.byline %}
+      </div>
+
+      <div class="well">
+        {%- for p in well -%}
+          {% include story-card.html post=p class="card--sm" %}
+        {%- endfor -%}
+      </div>
+
+      {%- comment -%} ── section blocks, one per desk ── {%- endcomment -%}
+      {%- assign order = "herd,ai,newage,eastern,money,ascension,unification,investigations,ends" | split: "," -%}
+      {%- for key in order -%}
+        {%- assign sposts = site.posts | where: "section", key -%}
+        {%- if sposts.size > 0 -%}
+          {%- assign label = key -%}
+          {%- for s in site.data.site.sections -%}{%- if s.key == key -%}{%- assign label = s.label -%}{%- endif -%}{%- endfor -%}
+          <section class="secblock">
+            <div class="secblock__rule">
+              <span class="secblock__title"><a href="{{ '/' | append: key | append: '/' | relative_url }}">{{ label }}</a></span>
+              <a class="secblock__more" href="{{ '/' | append: key | append: '/' | relative_url }}">All ▸</a>
+            </div>
+            <div class="secblock__list{% if sposts.size > 2 %} secblock__list--3{% endif %}">
+              {%- assign shown = sposts | slice: 0, 3 -%}
+              {%- for p in shown -%}
+                {% include story-card.html post=p class="card--sm" %}
+              {%- endfor -%}
+            </div>
+          </section>
+        {%- endif -%}
+      {%- endfor -%}
+
+    </div>
+
+    <div class="front__rail">
+      {% include index-rail.html %}
+
+      <div class="rail-box">
+        <p class="rail-box__title">The Ends column</p>
+        {%- assign ends = site.posts | where: "section", "ends" | slice: 0, 2 -%}
+        {%- for p in ends -%}
+          <div style="margin-bottom:.7rem">
+            <a href="{{ p.url | relative_url }}" style="font-family:var(--display);font-weight:700;color:var(--fg);text-decoration:none;font-size:.98rem">{{ p.title }}</a>
+          </div>
+        {%- endfor -%}
+        <a class="rail-link" href="{{ '/ends/' | relative_url }}">For the record ▸</a>
+      </div>
+
+      <div class="rail-box">
+        <p class="rail-box__title">Send a tip</p>
+        <p style="font-family:var(--body);font-size:.9rem;color:var(--fg-soft);line-height:1.45;margin:.2rem 0 .6rem">
+          Seen a movement forming? A revised end-date? A room no one came out of? The tip line is open.
+        </p>
+        <a class="rail-link" href="{{ '/tips/' | relative_url }}">Reach the desk ▸</a>
+      </div>
+    </div>
+  </div>
+</div>

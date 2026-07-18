@@ -1,0 +1,12 @@
+{%- comment -%} A single, restrained ticker of recent/"developing" headlines. {%- endcomment -%}
+{%- assign recent = site.posts | slice: 0, 6 -%}
+<div class="ticker" aria-label="Developing headlines">
+  <div class="wrap ticker__inner">
+    <span class="ticker__tag">Developing</span>
+    <div class="ticker__track">
+      {%- for p in recent -%}<span><a href="{{ p.url | relative_url }}">{{ p.title }}</a></span>{%- endfor -%}
+      {%- comment -%} duplicate for seamless marquee {%- endcomment -%}
+      {%- for p in recent -%}<span><a href="{{ p.url | relative_url }}" aria-hidden="true" tabindex="-1">{{ p.title }}</a></span>{%- endfor -%}
+    </div>
+  </div>
+</div>
