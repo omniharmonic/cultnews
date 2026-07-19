@@ -8,6 +8,7 @@ sections:
   - {key: money,         label: "Startups, Money & Movements"}
   - {key: ascension,     label: "Psychedelic & Ascension"}
   - {key: unification,   label: "Devotion & Unification"}
+  - {key: eco,           label: "Eco & Gaia"}
   - {key: ends,          label: "Ends"}
   - {key: herd,          label: "The Herd of God"}
   - {key: investigations, label: "Investigations"}
