@@ -7,6 +7,9 @@ tags: [eastern, metascience, feature]
 byline: "Tomas Reyes"
 dateline: "—"
 date: 2026-06-28
+image: /assets/img/cultnews_images/the-lab-that-builds-minds-from-belief.jpg
+image_alt: "A meditator sits before a diagram of nested figures, one drawn as if stepping out of the others."
+cutline: "The Meridian Institute calls the practice engineering; the tradition it borrowed calls it a warning. — Cult News"
 related: [when-the-network-reached-back, the-monk-the-theologian-and-the-soul-in-the-machine]
 ---
 

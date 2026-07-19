@@ -7,6 +7,9 @@ tags: [ai, merger, feature]
 byline: "Dev Okafor"
 dateline: "OAKLAND, Calif."
 date: 2026-07-15
+image: /assets/img/cultnews_images/when-the-network-reached-back.jpg
+image_alt: "A dim room lit only by a screen, a figure leaning close enough to the glow to lose the edge of themselves."
+cutline: "Inside a Confluence communion session, where the line between asking and answering is meant to dissolve. — Cult News"
 related: [the-faithless-who-want-to-live-forever, the-cult-that-roots-for-the-machine]
 ---
 

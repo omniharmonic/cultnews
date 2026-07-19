@@ -7,6 +7,9 @@ tags: [ascension, herd, interview, feature]
 byline: "Nadia Holloway"
 dateline: "—"
 date: 2026-06-14
+image: /assets/img/cultnews_images/the-brew-that-calls-the-old-gods.jpg
+image_alt: "A clay vessel set on an altar beneath the carved horns of an ancient bull-god."
+cutline: "The Herd insists its sacrament opens a door older, and further west, than the jungle's. — Cult News"
 related: [tarot-blackjack-with-the-high-priest, the-golden-calf-explained]
 ---
 

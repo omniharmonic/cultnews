@@ -7,6 +7,9 @@ tags: [herd, money, feature]
 byline: "Marguerite Sable"
 dateline: "SAN FRANCISCO"
 date: 2026-06-20
+image: /assets/img/cultnews_images/the-theologian-walks-away-from-the-money.jpg
+image_alt: "An empty chair at a boardroom table, the city visible through floor-to-ceiling glass."
+cutline: "Michael Enlightened's quiet subtraction, read by his associates as a theological one. — Cult News"
 related: [the-monk-the-theologian-and-the-soul-in-the-machine, who-funds-the-end-of-the-world]
 ---
 

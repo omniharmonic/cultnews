@@ -7,6 +7,9 @@ tags: [eco, gaia, feature]
 byline: "Sister Perpetua Lund"
 dateline: "—"
 date: 2026-06-11
+image: /assets/img/cultnews_images/worshipping-the-one-organism.jpg
+image_alt: "A gathering kneeling in a green clearing, hands pressed flat to the soil."
+cutline: "The Communion grieves the planet into a god. — Cult News"
 related: [they-want-to-be-compost-for-the-next-world, dancing-back-to-the-pleroma]
 ---
 

@@ -7,6 +7,9 @@ tags: [money, esoteric, feature]
 byline: "Marguerite Sable"
 dateline: "NEW YORK"
 date: 2026-04-30
+image: /assets/img/cultnews_images/the-desk-that-practices-magic.jpg
+image_alt: "A trading floor after hours, screens still glowing over rows of empty desks."
+cutline: "The Circle runs a sacred current backward, to power a profane end. — Cult News"
 related: [the-cult-that-says-the-billionaires-are-possessed, the-trader-who-heard-the-bull]
 ---
 

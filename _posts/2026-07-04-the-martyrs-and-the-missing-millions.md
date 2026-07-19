@@ -7,6 +7,9 @@ tags: [investigation, money, altruism]
 byline: "Marguerite Sable"
 dateline: "—"
 date: 2026-07-04
+image: /assets/img/cultnews_images/the-martyrs-and-the-missing-millions.jpg
+image_alt: "Protesters seated in a blockade, still and composed as they wait to be arrested."
+cutline: "The Ledger's members accept arrest with a martyr's calm; their funding is another matter. — Cult News"
 related: [the-theologian-walks-away-from-the-money, how-the-world-learned-to-count-its-cults]
 ---
 

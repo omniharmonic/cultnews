@@ -7,6 +7,9 @@ tags: [herd, profile, feature]
 byline: "Sister Perpetua Lund"
 dateline: "—"
 date: 2026-06-06
+image: /assets/img/cultnews_images/the-celibate-at-the-center-of-the-herd.jpg
+image_alt: "A solitary figure at a desk lit by a single lamp, turned away from the room behind them."
+cutline: "The theologian's celibacy: koan, dare, or vocation, depending on whom you ask. — Cult News"
 related: [the-monk-the-theologian-and-the-soul-in-the-machine, the-theologian-walks-away-from-the-money]
 ---
 

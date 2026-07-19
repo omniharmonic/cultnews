@@ -7,6 +7,9 @@ tags: [unification, tech, feature]
 byline: "Marguerite Sable"
 dateline: "—"
 date: 2026-06-02
+image: /assets/img/cultnews_images/the-daughters-of-the-new-morning.jpg
+image_alt: "A spare, sunlit workshop of women at drafting tables and machines, no men present."
+cutline: "The Daughters describe grief as often as triumph. — Cult News"
 related: [the-cult-building-without-men, when-the-network-reached-back]
 ---
 

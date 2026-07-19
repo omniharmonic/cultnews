@@ -7,6 +7,9 @@ tags: [ascension, neotantra, feature]
 byline: "Tomas Reyes"
 dateline: "—"
 date: 2026-05-27
+image: /assets/img/cultnews_images/dancing-back-to-the-pleroma.jpg
+image_alt: "Barefoot dancers blurred with motion in a dark room, arms lifted toward nothing visible."
+cutline: "The Return prescribes Tuesday nights and a good sound system. — Cult News"
 related: [worshipping-the-one-organism, one-body-on-the-dance-floor]
 ---
 

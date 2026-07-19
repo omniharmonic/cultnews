@@ -7,6 +7,9 @@ tags: [ai, transhumanism, feature]
 byline: "Dev Okafor"
 dateline: "—"
 date: 2026-05-18
+image: /assets/img/cultnews_images/the-faithless-who-want-to-live-forever.jpg
+image_alt: "A stark banner declaring war on death hangs over an otherwise empty meeting hall."
+cutline: "The Somatic Front's war on death, waged so far in rhetoric. — Cult News"
 related: [when-the-network-reached-back, the-cult-that-roots-for-the-machine]
 ---
 

@@ -7,6 +7,9 @@ tags: [ai, accelerationism, feature]
 byline: "Dev Okafor"
 dateline: "—"
 date: 2026-07-11
+image: /assets/img/cultnews_images/the-cult-that-roots-for-the-machine.jpg
+image_alt: "A cold, empty reading room, a single terminal glowing at the far end."
+cutline: "Outsideness has looked at the end everyone fears and decided to love it. — Cult News"
 related: [the-faithless-who-want-to-live-forever, when-the-network-reached-back]
 ---
 

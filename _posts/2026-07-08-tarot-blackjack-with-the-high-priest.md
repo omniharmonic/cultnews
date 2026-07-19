@@ -7,6 +7,9 @@ tags: [herd, esoteric, feature]
 byline: "Nadia Holloway"
 dateline: "—"
 date: 2026-07-08
+image: /assets/img/cultnews_images/tarot-blackjack-with-the-high-priest.jpg
+image_alt: "Tarot cards dealt across a green baize table like a blackjack hand, a chip resting on the Wheel of Fortune."
+cutline: "Two decks, one conviction: that chance is a language. — Cult News"
 related: [the-brew-that-calls-the-old-gods, the-golden-calf-explained]
 ---
 

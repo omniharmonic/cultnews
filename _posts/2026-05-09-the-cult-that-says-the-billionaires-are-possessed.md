@@ -7,6 +7,9 @@ tags: [newage, esoteric, feature]
 byline: "Nadia Holloway"
 dateline: "—"
 date: 2026-05-09
+image: /assets/img/cultnews_images/the-cult-that-says-the-billionaires-are-possessed.jpg
+image_alt: "An ancient royal mask superimposed faintly over a modern skyline of glass towers."
+cutline: "The House of the Devourers sees old god-kings on new thrones. — Cult News"
 related: [the-desk-that-practices-magic, the-cult-that-roots-for-the-machine]
 ---
 

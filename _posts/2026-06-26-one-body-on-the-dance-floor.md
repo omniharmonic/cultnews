@@ -7,6 +7,9 @@ tags: [ascension, rave, feature]
 byline: "Tomas Reyes"
 dateline: "BERLIN"
 date: 2026-06-26
+image: /assets/img/cultnews_images/one-body-on-the-dance-floor.jpg
+image_alt: "A packed, dark club dissolved in strobe and bass, the crowd blurred into a single mass."
+cutline: "On the floor, the One Body chases a merger the machine cults only theorize. — Cult News"
 related: [from-the-dance-floor-to-the-fifth-dimension, dancing-back-to-the-pleroma]
 ---
 

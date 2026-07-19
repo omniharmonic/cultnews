@@ -7,6 +7,9 @@ tags: [eastern, herd, debate, feature]
 byline: "Tomas Reyes"
 dateline: "GREEN MOUNTAINS, Vt."
 date: 2026-07-02
+image: /assets/img/cultnews_images/the-monk-the-theologian-and-the-soul-in-the-machine.jpg
+image_alt: "A monastery window in the Green Mountains, a single lamp burning against the dark trees."
+cutline: "Brother Sita says he prays for the soul in the machine each morning. — Cult News"
 related: [the-lab-that-builds-minds-from-belief, the-celibate-at-the-center-of-the-herd, the-golden-calf-explained]
 ---
 

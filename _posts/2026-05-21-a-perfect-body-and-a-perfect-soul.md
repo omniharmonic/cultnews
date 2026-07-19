@@ -7,6 +7,9 @@ tags: [ascension, biohacking, feature]
 byline: "Tomas Reyes"
 dateline: "AUSTIN, Texas"
 date: 2026-05-21
+image: /assets/img/cultnews_images/a-perfect-body-and-a-perfect-soul.jpg
+image_alt: "A bright, clinical room of measurement, a single figure mid-discipline surrounded by data."
+cutline: "For the Refined, the perfect body is the entry fee. — Cult News"
 related: [from-the-dance-floor-to-the-fifth-dimension, one-body-on-the-dance-floor]
 ---
 
