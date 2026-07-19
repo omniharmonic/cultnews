@@ -7,6 +7,9 @@ tags: [ascension, the-body, feature]
 byline: "Sister Perpetua Lund"
 dateline: "—"
 date: 2026-05-12
+image: /assets/img/cultnews_images/shakti-without-a-riverbed.jpg
+image_alt: "A circle of women seated on the floor of a warm, low-lit room, turned inward toward one another."
+cutline: "The Wellspring raised a real force, then built no channel to hold it. — Cult News"
 related: [the-map-was-perfect-the-mapmaker-was-not, the-frequency-was-too-high]
 ---
 

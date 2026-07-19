@@ -7,6 +7,9 @@ tags: [investigation, personal-development, feature]
 byline: "Marguerite Sable"
 dateline: "—"
 date: 2026-06-25
+image: /assets/img/cultnews_images/the-map-was-perfect-the-mapmaker-was-not.jpg
+image_alt: "A lecture-hall wall covered in interlocking diagrams of the mind and of civilization."
+cutline: "The Architect could model the whole civilization, and not the woman in front of him. — Cult News"
 related: [shakti-without-a-riverbed, the-daughters-of-the-new-morning]
 ---
 

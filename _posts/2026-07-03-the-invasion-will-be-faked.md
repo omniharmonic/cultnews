@@ -7,6 +7,9 @@ tags: [newage, contact, feature]
 byline: "Nadia Holloway"
 dateline: "—"
 date: 2026-07-03
+image: /assets/img/cultnews_images/the-invasion-will-be-faked.jpg
+image_alt: "Figures on a dark hillside watching the night sky, waiting for ships."
+cutline: "The Second Sky waits for the counterfeit invasion — the sign, they say, that the real visitors are near. — Cult News"
 related: [eleven-landing-dates-later-the-ninth-wave-still-waits, the-cult-that-thinks-were-gods-dream]
 ---
 

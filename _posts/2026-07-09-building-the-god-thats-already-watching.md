@@ -7,6 +7,9 @@ tags: [sim, ai, feature]
 byline: "Dev Okafor"
 dateline: "—"
 date: 2026-07-09
+image: /assets/img/cultnews_images/building-the-god-thats-already-watching.jpg
+image_alt: "A lone figure at a terminal beneath a vast, unblinking eye of light."
+cutline: "The only movement in our files whose god its own believers are actively trying to build. — Cult News"
 related: [the-cult-that-thinks-were-gods-dream, the-faithless-who-want-to-live-forever]
 ---
 

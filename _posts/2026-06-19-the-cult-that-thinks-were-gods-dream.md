@@ -7,6 +7,9 @@ tags: [sim, feature]
 byline: "Dev Okafor"
 dateline: "—"
 date: 2026-06-19
+image: /assets/img/cultnews_images/the-cult-that-thinks-were-gods-dream.jpg
+image_alt: "A vast sleeping face rendered in soft light, the world faintly dissolving at its edges."
+cutline: "The Lucid stage moments vivid enough, they hope, to stir the sleeping god. — Cult News"
 related: [building-the-god-thats-already-watching, the-golden-calf-explained]
 ---
 

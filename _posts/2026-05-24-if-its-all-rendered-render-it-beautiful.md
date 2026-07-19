@@ -7,6 +7,9 @@ tags: [sim, ascension, feature]
 byline: "Tomas Reyes"
 dateline: "BLACK ROCK DESERT, Nev."
 date: 2026-05-24
+image: /assets/img/cultnews_images/if-its-all-rendered-render-it-beautiful.jpg
+image_alt: "An enormous illuminated art car glowing against the black of the desert at night."
+cutline: "If it's all going to be rendered anyway, the Amplitude says, render it beautiful. — Cult News"
 related: [building-the-god-thats-already-watching, one-body-on-the-dance-floor]
 ---
 

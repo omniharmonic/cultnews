@@ -7,6 +7,9 @@ tags: [investigation, esoteric, history, feature]
 byline: "Dev Okafor"
 dateline: "—"
 date: 2026-04-17
+image: /assets/img/cultnews_images/the-rocket-the-magus-and-the-pulp-writer.jpg
+image_alt: "A mid-century desk strewn with rocket schematics, ceremonial diagrams, and pulp magazines."
+cutline: "A religion the public files under 'self-help,' built by men who were trying to open something. — Cult News"
 related: [the-cult-that-says-the-billionaires-are-possessed, the-desk-that-practices-magic]
 ---
 
