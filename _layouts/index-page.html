@@ -85,7 +85,7 @@ layout: default
           {%- for c in site.data.cults -%}
           <tr>
             <td class="roster__name" data-label="Movement">
-              {%- if c.genre == "herd" -%}<a href="{{ '/herd/' | relative_url }}">{{ c.name }}</a>{%- else -%}{{ c.name }}{%- endif -%}
+              <a href="{{ '/' | append: c.genre | append: '/' | relative_url }}">{{ c.name }}</a>
             </td>
             <td data-label="Genre"><span class="roster__genre">{{ c.genre }}</span></td>
             <td data-label="Leader">{{ c.leader }}</td>

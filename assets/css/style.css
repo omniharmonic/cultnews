@@ -442,13 +442,14 @@ a.chip:hover{ background:var(--accent); color:var(--bg); }
 @media (max-width:640px){
   /* Section nav becomes a single horizontally-scrollable row — compact while
      sticky, with a right-edge fade hinting there's more to swipe. */
-  .nav{
-    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 2.2rem),transparent);
-            mask-image:linear-gradient(90deg,#000 calc(100% - 2.2rem),transparent);
-  }
+  /* The right-edge fade lives on the scroller (.wrap), NOT the sticky .nav.
+     A mask on a position:sticky element breaks sticky pinning in iOS Safari,
+     which made the bar drift vertically while scrolling. */
   .nav .wrap{
     flex-wrap:nowrap; overflow-x:auto; justify-content:flex-start;
     -webkit-overflow-scrolling:touch; scrollbar-width:none; padding-right:2.4rem;
+    -webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 2.2rem),transparent);
+            mask-image:linear-gradient(90deg,#000 calc(100% - 2.2rem),transparent);
   }
   .nav .wrap::-webkit-scrollbar{ display:none; }
   .nav a{ padding:.55rem .7rem; font-size:.94rem; }

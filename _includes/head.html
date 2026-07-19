@@ -3,8 +3,9 @@
 <meta name="theme-color" content="#F3EFE6" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#12141C" media="(prefers-color-scheme: dark)">
 
-{%- comment -%} Set the Late Edition theme before paint to avoid a flash. {%- endcomment -%}
-<script>try{var t=localStorage.getItem('cultnews-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+{%- comment -%} Default to the Late Edition (night) theme before paint; honor an
+  explicit 'day' choice. Setting night on error keeps dark as the true default. {%- endcomment -%}
+<script>try{var t=localStorage.getItem('cultnews-theme');if(t!=='day')document.documentElement.setAttribute('data-theme','night');}catch(e){document.documentElement.setAttribute('data-theme','night');}</script>
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="font" type="font/woff2" crossorigin

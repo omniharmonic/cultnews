@@ -1,4 +1,5 @@
-// Late Edition — the optional dark mode toggle. Persists to localStorage.
+// Late Edition — the theme toggle. Night is the default; a 'day' choice is
+// persisted explicitly to localStorage so it survives across visits.
 (function () {
   var KEY = 'cultnews-theme';
   var root = document.documentElement;
@@ -17,7 +18,7 @@
     var night = !isNight();
     if (night) root.setAttribute('data-theme', 'night');
     else root.removeAttribute('data-theme');
-    try { localStorage.setItem(KEY, night ? 'night' : ''); } catch (e) {}
+    try { localStorage.setItem(KEY, night ? 'night' : 'day'); } catch (e) {}
     sync();
   });
 

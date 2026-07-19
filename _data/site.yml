@@ -9,6 +9,7 @@ sections:
   - {key: ascension,     label: "Psychedelic & Ascension"}
   - {key: unification,   label: "Devotion & Unification"}
   - {key: eco,           label: "Eco & Gaia"}
+  - {key: sim,           label: "Simulation"}
   - {key: ends,          label: "Ends"}
   - {key: herd,          label: "The Herd of God"}
   - {key: investigations, label: "Investigations"}
