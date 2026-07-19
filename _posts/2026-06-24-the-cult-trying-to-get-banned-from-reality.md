@@ -3,7 +3,7 @@ layout: article
 title: "The Cult Trying to Get Banned From Reality"
 deck: "The Basement believes we live in a simulation nearing shutdown. Salvation, they say, is getting the operators to notice us before the lights go out."
 section: ai
-tags: [ai, simulation, feature]
+tags: [ai, sim, feature]
 byline: "Dev Okafor"
 dateline: "AUSTIN, Texas"
 date: 2026-06-24
