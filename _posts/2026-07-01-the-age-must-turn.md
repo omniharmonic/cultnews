@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "'The Age Must Turn': The Vanguard That Says the Bottom Is Now"
-deck: "A fictionalized non-dual movement holds that we are at the nadir of a cosmic cycle — and that hastening its turning is a sacred duty. Its rhetoric alarms scholars; its actions, so far, are theatrical."
+deck: "A non-dual movement holds that we are at the nadir of a cosmic cycle — and that hastening its turning is a sacred duty. Its rhetoric alarms scholars; its actions, so far, are theatrical."
 section: eastern
 tags: [eastern, feature]
 byline: "Tomas Reyes"

@@ -10,7 +10,7 @@ date: 2026-06-02
 image: /assets/img/cultnews_images/the-daughters-of-the-new-morning.jpg
 image_alt: "A spare, sunlit workshop of women at drafting tables and machines, no men present."
 cutline: "The Daughters describe grief as often as triumph. — Cult News"
-related: [the-cult-building-without-men, when-the-network-reached-back]
+related: [shakti-without-a-riverbed, when-the-network-reached-back]
 ---
 
 The Daughters of the New Morning are building, with real engineering talent, toward a world that does not require men — and they are unusually candid that this is the goal, not a caricature of it. The order pools expertise in reproductive technology, automation, and community design toward a single thesis: that the arrangements which have organized human life around men are not fixable but escapable, and that the enlightened move is not reform but departure — to construct, deliberately, the tools and the settlements that make a separate future possible.
